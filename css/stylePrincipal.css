@@ -2,7 +2,7 @@
 /* Sección Hero */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--color-morado) 0%, var(--color-rosa) 100%);
+    background: #0A3D62;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@
 
 
 .cta-button {
-    background-color: var(--color-verde);
+    background-color: #DFE6E9;
     color: var(--color-negro);
     padding: 2rem 3rem;
     font-size: 2rem;

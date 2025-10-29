@@ -5,7 +5,7 @@
     background-color: var(--color-negro);
     color: var(--color-blanco);
     padding: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-link {
