@@ -1,0 +1,128 @@
+@import url('style.css');
+/* Variables de color - ajusta según tu style.css */
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-gris: #333333;
+}
+
+/* Sección Contacto */
+.contacto {
+    min-height: 100vh;
+    padding: 2rem 5%;
+    background-color: #10dfee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-container {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+/* Caja del título */
+.titulo-box {
+    border: 3px solid var(--color-negro);
+    padding: 2rem 3rem;
+    text-align: center;
+    background-color: var(--color-blanco);
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.titulo-box h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    color: var(--color-negro);
+}
+
+/* Círculos de redes sociales */
+.social-circles {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 4rem;
+}
+
+.circle-link {
+    text-decoration: none;
+    color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.circle-link:hover {
+    transform: scale(1.05);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-blanco);
+}
+
+.social-label {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo-box h1 {
+        font-size: 1.8rem;
+    }
+
+    .titulo-box {
+        padding: 1.5rem 2rem;
+    }
+
+    .social-circles {
+        gap: 4rem;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .titulo-box h1 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .social-circles {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+    }
+}
